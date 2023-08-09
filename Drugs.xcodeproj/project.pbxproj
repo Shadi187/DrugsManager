@@ -11,6 +11,9 @@
 		9D7218D72A83BBA200EDDCA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7218D62A83BBA200EDDCA1 /* ContentView.swift */; };
 		9D7218D92A83BBA400EDDCA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D7218D82A83BBA400EDDCA1 /* Assets.xcassets */; };
 		9D7218DC2A83BBA400EDDCA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D7218DB2A83BBA400EDDCA1 /* Preview Assets.xcassets */; };
+		9D7218E82A83FFD800EDDCA1 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7218E72A83FFD800EDDCA1 /* Color.swift */; };
+		9D7218EA2A8400A300EDDCA1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7218E92A8400A300EDDCA1 /* MainView.swift */; };
+		9D7218ED2A84012600EDDCA1 /* Drug.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D7218EB2A84012600EDDCA1 /* Drug.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		9D7218D62A83BBA200EDDCA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D7218D82A83BBA400EDDCA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D7218DB2A83BBA400EDDCA1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9D7218E72A83FFD800EDDCA1 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		9D7218E92A8400A300EDDCA1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		9D7218EC2A84012600EDDCA1 /* Drug.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Drug.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,11 @@
 		9D7218D32A83BBA200EDDCA1 /* Drugs */ = {
 			isa = PBXGroup;
 			children = (
+				9D7218E62A83FB1600EDDCA1 /* Utilities */,
+				9D7218E52A83FB0A00EDDCA1 /* Model */,
+				9D7218E42A83FAFD00EDDCA1 /* ViewModel */,
+				9D7218E32A83FAF500EDDCA1 /* View */,
+				9D7218E22A83FAEC00EDDCA1 /* Extensions */,
 				9D7218D42A83BBA200EDDCA1 /* DrugsApp.swift */,
 				9D7218D62A83BBA200EDDCA1 /* ContentView.swift */,
 				9D7218D82A83BBA400EDDCA1 /* Assets.xcassets */,
@@ -65,6 +76,44 @@
 				9D7218DB2A83BBA400EDDCA1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9D7218E22A83FAEC00EDDCA1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9D7218E72A83FFD800EDDCA1 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9D7218E32A83FAF500EDDCA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D7218E92A8400A300EDDCA1 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D7218E42A83FAFD00EDDCA1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9D7218E52A83FB0A00EDDCA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D7218EB2A84012600EDDCA1 /* Drug.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D7218E62A83FB1600EDDCA1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +186,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7218ED2A84012600EDDCA1 /* Drug.xcdatamodeld in Sources */,
 				9D7218D72A83BBA200EDDCA1 /* ContentView.swift in Sources */,
+				9D7218EA2A8400A300EDDCA1 /* MainView.swift in Sources */,
 				9D7218D52A83BBA200EDDCA1 /* DrugsApp.swift in Sources */,
+				9D7218E82A83FFD800EDDCA1 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +391,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9D7218EB2A84012600EDDCA1 /* Drug.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9D7218EC2A84012600EDDCA1 /* Drug.xcdatamodel */,
+			);
+			currentVersion = 9D7218EC2A84012600EDDCA1 /* Drug.xcdatamodel */;
+			path = Drug.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9D7218C92A83BBA200EDDCA1 /* Project object */;
 }

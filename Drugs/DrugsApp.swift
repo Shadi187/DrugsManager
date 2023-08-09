@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct DrugsApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                MainView()
+            }
+            
         }
     }
 }
