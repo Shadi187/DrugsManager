@@ -28,9 +28,13 @@ struct MainView: View {
         ZStack{
             //Background Layer
             Color.theme.main.ignoresSafeArea()
-            if !vm.hasEnteredName {
-                AddName()
-            }else {
+
+            
+            
+//            if !vm.userEnteredName {
+//                addView
+//
+//            }else {}
                 
             
             //Content Layer
@@ -45,7 +49,7 @@ struct MainView: View {
             
             
             
-        }
+        
     }
     }
 }
@@ -68,7 +72,7 @@ extension MainView {
                 
                 Text("Welcome Back ")
                     
-                Text("Dr. \(vm.hasEnteredName ? vm.userName! : "" )")
+//                Text("Dr. \(vm.hasEnteredName ? vm.userName! : "" )")
             }.foregroundColor(.gray)
             Spacer()
             CircleButton()
@@ -90,6 +94,25 @@ extension MainView {
         .modifier(ListBackgroundModifier())
         .scrollContentBackground(.hidden)
     }
+    
+//    var addView: some View {
+//
+//            VStack{
+//                TextField("dasdsada", text: $vm.tempName)
+//
+//                Text("Save")
+//                    .bold()
+//                    .onTapGesture {
+//                        UserDefaults.standard.set(vm.tempName, forKey: "username")
+//                        vm.hasEnteredName = true
+//                        UserDefaults.standard.set(vm.hasEnteredName, forKey: "check")
+//
+//                    }
+//
+//            }
+//
+//        }
+    
     
 
 }
