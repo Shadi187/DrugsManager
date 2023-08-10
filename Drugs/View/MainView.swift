@@ -28,7 +28,9 @@ struct MainView: View {
         ZStack{
             //Background Layer
             Color.theme.main.ignoresSafeArea()
-
+                .sheet(isPresented: $vm.showAddDrug) {
+                    AddDrug()
+                }
             
             
 //            if !vm.userEnteredName {
@@ -75,7 +77,12 @@ extension MainView {
 //                Text("Dr. \(vm.hasEnteredName ? vm.userName! : "" )")
             }.foregroundColor(.gray)
             Spacer()
-            CircleButton()
+            CircleButton(logo:"plus")
+                .onTapGesture {
+                    withAnimation {
+                        vm.showAddDrug.toggle()
+                    }
+                }
         }.padding()
     }
     

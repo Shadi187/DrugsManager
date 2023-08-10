@@ -6,4 +6,5 @@ class MainViewModel:ObservableObject{
     @Published var hasEnteredName:Bool = false
     @Published var userEnteredName = UserDefaults.standard.bool(forKey: "check")
     @Published var tempName:String = ""
+    @Published var showAddDrug: Bool = false 
 }

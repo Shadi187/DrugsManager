@@ -11,16 +11,16 @@ import SwiftUI
 struct CircleButton: View {
     var color1:Color = Color(UIColor(red:0.7608050108,green:0.8164883852,blue:0.9259157777,alpha:1))
     var color2:Color = Color.theme.second
-    var text:String = ""
+    var logo: String = "pencil"
     
     
     var body: some View {
         VStack {
             Circle()
-                .frame(width:70)
+                .frame(width:60)
                 .foregroundColor(Color.theme.circle)
                 .overlay(
-                    Image(systemName: "pencil")
+                    Image(systemName: logo)
                         .font(.title)
                 )
                 
