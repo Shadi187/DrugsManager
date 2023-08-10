@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct DrugsApp: App {
-    
+    @StateObject private var vm = MainViewModel()
     var body: some Scene {
         WindowGroup {
             NavigationStack{
                 MainView()
-            }
+            }.environmentObject(vm)
             
         }
     }

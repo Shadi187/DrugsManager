@@ -3,6 +3,6 @@
     <entity name="Description" representedClassName="Description" syncable="YES" codeGenerationType="class"/>
     <entity name="Dose" representedClassName="Dose" syncable="YES" codeGenerationType="class"/>
     <entity name="GenericName" representedClassName="GenericName" syncable="YES" codeGenerationType="class"/>
-    <entity name="ID" representedClassName="ID" syncable="YES" codeGenerationType="class"/>
+    <entity name="Id" representedClassName="Id" syncable="YES" codeGenerationType="class"/>
     <entity name="TradeName" representedClassName="TradeName" syncable="YES" codeGenerationType="class"/>
 </model>

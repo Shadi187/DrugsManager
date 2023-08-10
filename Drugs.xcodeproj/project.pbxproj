@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D27F8342A84E97E00BF6711 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D27F8332A84E97E00BF6711 /* CircleButton.swift */; };
+		9D27F8362A85000E00BF6711 /* RowDrugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D27F8352A85000E00BF6711 /* RowDrugView.swift */; };
+		9D27F8392A850F1400BF6711 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D27F8382A850F1400BF6711 /* MainViewModel.swift */; };
+		9D27F83B2A8515B000BF6711 /* AddName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D27F83A2A8515B000BF6711 /* AddName.swift */; };
+		9D27F83D2A85214100BF6711 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D27F83C2A85214100BF6711 /* PreviewProvider.swift */; };
 		9D7218D52A83BBA200EDDCA1 /* DrugsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7218D42A83BBA200EDDCA1 /* DrugsApp.swift */; };
 		9D7218D72A83BBA200EDDCA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7218D62A83BBA200EDDCA1 /* ContentView.swift */; };
 		9D7218D92A83BBA400EDDCA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D7218D82A83BBA400EDDCA1 /* Assets.xcassets */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D27F8332A84E97E00BF6711 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		9D27F8352A85000E00BF6711 /* RowDrugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowDrugView.swift; sourceTree = "<group>"; };
+		9D27F8382A850F1400BF6711 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		9D27F83A2A8515B000BF6711 /* AddName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddName.swift; sourceTree = "<group>"; };
+		9D27F83C2A85214100BF6711 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		9D7218D12A83BBA200EDDCA1 /* Drugs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drugs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D7218D42A83BBA200EDDCA1 /* DrugsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugsApp.swift; sourceTree = "<group>"; };
 		9D7218D62A83BBA200EDDCA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +48,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D27F8312A84E91E00BF6711 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9D27F8322A84E92700BF6711 /* Buttons */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9D27F8322A84E92700BF6711 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				9D27F8332A84E97E00BF6711 /* CircleButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		9D7218C82A83BBA200EDDCA1 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +83,7 @@
 		9D7218D32A83BBA200EDDCA1 /* Drugs */ = {
 			isa = PBXGroup;
 			children = (
+				9D27F8312A84E91E00BF6711 /* Components */,
 				9D7218E62A83FB1600EDDCA1 /* Utilities */,
 				9D7218E52A83FB0A00EDDCA1 /* Model */,
 				9D7218E42A83FAFD00EDDCA1 /* ViewModel */,
@@ -82,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				9D7218E72A83FFD800EDDCA1 /* Color.swift */,
+				9D27F83C2A85214100BF6711 /* PreviewProvider.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -90,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				9D7218E92A8400A300EDDCA1 /* MainView.swift */,
+				9D27F8352A85000E00BF6711 /* RowDrugView.swift */,
+				9D27F83A2A8515B000BF6711 /* AddName.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,6 +127,7 @@
 		9D7218E42A83FAFD00EDDCA1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9D27F8382A850F1400BF6711 /* MainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -186,11 +217,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D27F83B2A8515B000BF6711 /* AddName.swift in Sources */,
 				9D7218ED2A84012600EDDCA1 /* Drug.xcdatamodeld in Sources */,
 				9D7218D72A83BBA200EDDCA1 /* ContentView.swift in Sources */,
+				9D27F8362A85000E00BF6711 /* RowDrugView.swift in Sources */,
 				9D7218EA2A8400A300EDDCA1 /* MainView.swift in Sources */,
+				9D27F8342A84E97E00BF6711 /* CircleButton.swift in Sources */,
 				9D7218D52A83BBA200EDDCA1 /* DrugsApp.swift in Sources */,
 				9D7218E82A83FFD800EDDCA1 /* Color.swift in Sources */,
+				9D27F8392A850F1400BF6711 /* MainViewModel.swift in Sources */,
+				9D27F83D2A85214100BF6711 /* PreviewProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
