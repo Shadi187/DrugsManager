@@ -22,6 +22,8 @@ struct ListBackgroundModifier: ViewModifier {
 
 struct MainView: View {
     @EnvironmentObject private var vm:MainViewModel
+    @StateObject var mm = AddDrugVM()
+    
     @State var nameHasEntered: Bool = false
     var data = ["s","s","d","d"]
     var body: some View {
@@ -45,7 +47,12 @@ struct MainView: View {
                 navbar
                 
 //                Show the drugs
-                drugList
+//                if vm.arrayOfDrugs.isEmpty {
+                    
+//                }else {
+                    drugList
+//                }
+                
                 Spacer()
             }
             
@@ -88,8 +95,8 @@ extension MainView {
     
     var drugList:some View{
         List{
-            ForEach(0..<10){data in
-                    RowDrugView()
+            ForEach(mm.tempArray){data in
+                RowDrugView(genName: data.generic_name ?? "" , trName: data.trade_name ?? "")
                     .listRowBackground(
                         Color.theme.main.ignoresSafeArea()
                     )

@@ -19,6 +19,9 @@
 		9D7218E82A83FFD800EDDCA1 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7218E72A83FFD800EDDCA1 /* Color.swift */; };
 		9D7218EA2A8400A300EDDCA1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7218E92A8400A300EDDCA1 /* MainView.swift */; };
 		9D7218ED2A84012600EDDCA1 /* Drug.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D7218EB2A84012600EDDCA1 /* Drug.xcdatamodeld */; };
+		9DD45B062A867087002175EC /* AddDrugVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD45B052A867087002175EC /* AddDrugVM.swift */; };
+		9DD45B082A8672F4002175EC /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD45B072A8672F4002175EC /* RoundedButton.swift */; };
+		9DD45B0C2A8697CB002175EC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD45B0B2A8697CB002175EC /* CoreDataManager.swift */; };
 		9DF4A65F2A8593B800AF44C8 /* AddDrug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF4A65E2A8593B800AF44C8 /* AddDrug.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,9 @@
 		9D7218E72A83FFD800EDDCA1 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		9D7218E92A8400A300EDDCA1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9D7218EC2A84012600EDDCA1 /* Drug.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Drug.xcdatamodel; sourceTree = "<group>"; };
+		9DD45B052A867087002175EC /* AddDrugVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDrugVM.swift; sourceTree = "<group>"; };
+		9DD45B072A8672F4002175EC /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		9DD45B0B2A8697CB002175EC /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		9DF4A65E2A8593B800AF44C8 /* AddDrug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDrug.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				9D27F8332A84E97E00BF6711 /* CircleButton.swift */,
+				9DD45B072A8672F4002175EC /* RoundedButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -131,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				9D27F8382A850F1400BF6711 /* MainViewModel.swift */,
+				9DD45B052A867087002175EC /* AddDrugVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -146,6 +154,7 @@
 		9D7218E62A83FB1600EDDCA1 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				9DD45B0B2A8697CB002175EC /* CoreDataManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -223,13 +232,16 @@
 				9DF4A65F2A8593B800AF44C8 /* AddDrug.swift in Sources */,
 				9D27F83B2A8515B000BF6711 /* AddName.swift in Sources */,
 				9D7218ED2A84012600EDDCA1 /* Drug.xcdatamodeld in Sources */,
+				9DD45B062A867087002175EC /* AddDrugVM.swift in Sources */,
 				9D7218D72A83BBA200EDDCA1 /* ContentView.swift in Sources */,
 				9D27F8362A85000E00BF6711 /* RowDrugView.swift in Sources */,
 				9D7218EA2A8400A300EDDCA1 /* MainView.swift in Sources */,
 				9D27F8342A84E97E00BF6711 /* CircleButton.swift in Sources */,
 				9D7218D52A83BBA200EDDCA1 /* DrugsApp.swift in Sources */,
 				9D7218E82A83FFD800EDDCA1 /* Color.swift in Sources */,
+				9DD45B082A8672F4002175EC /* RoundedButton.swift in Sources */,
 				9D27F8392A850F1400BF6711 /* MainViewModel.swift in Sources */,
+				9DD45B0C2A8697CB002175EC /* CoreDataManager.swift in Sources */,
 				9D27F83D2A85214100BF6711 /* PreviewProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

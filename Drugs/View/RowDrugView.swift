@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct RowDrugView: View {
+    let genName: String
+    let trName: String
+    
     var body: some View {
         HStack(spacing:10){
         
@@ -15,11 +18,11 @@ struct RowDrugView: View {
             Circle()
                 .frame(width:50)
             VStack{
-                Text("paradontax")
+                Text("\(genName)")
                     .font(.title2)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
-                Text("parax")
+                Text("\(trName)")
                     .font(.headline)
                     .fontWeight(.semibold)
                     .foregroundColor(.gray)
@@ -33,6 +36,6 @@ struct RowDrugView: View {
 
 struct RowDrugView_Previews: PreviewProvider {
     static var previews: some View {
-        RowDrugView()
+        RowDrugView(genName: "", trName: "")
     }
 }

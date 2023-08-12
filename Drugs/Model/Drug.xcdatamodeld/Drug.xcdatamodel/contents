@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22F82" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Description" representedClassName="Description" syncable="YES" codeGenerationType="class"/>
-    <entity name="Dose" representedClassName="Dose" syncable="YES" codeGenerationType="class"/>
-    <entity name="GenericName" representedClassName="GenericName" syncable="YES" codeGenerationType="class"/>
-    <entity name="Id" representedClassName="Id" syncable="YES" codeGenerationType="class"/>
-    <entity name="TradeName" representedClassName="TradeName" syncable="YES" codeGenerationType="class"/>
+    <entity name="DrugEntity1" representedClassName=".DrugEntity1" syncable="YES" codeGenerationType="class">
+        <attribute name="ddescription" optional="YES" attributeType="String"/>
+        <attribute name="dose" optional="YES" attributeType="String"/>
+        <attribute name="generic_name" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="trade_name" optional="YES" attributeType="String"/>
+    </entity>
 </model>
