@@ -13,7 +13,7 @@ struct DrugsApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack{
-                MainView()
+                MainView(vm:vm)
             }.environmentObject(vm)
             
         }

@@ -10,7 +10,7 @@ import SwiftUI
 ///Default Color1 is main and default Color2 is second
 struct CircleButton: View {
     var color1:Color = Color(UIColor(red:0.7608050108,green:0.8164883852,blue:0.9259157777,alpha:1))
-    var color2:Color = Color.theme.second
+    var color2:Color = Color.theme.main
     var logo: String = "pencil"
     
     
@@ -18,9 +18,10 @@ struct CircleButton: View {
         VStack {
             Circle()
                 .frame(width:60)
-                .foregroundColor(Color.theme.circle)
+                .foregroundColor(Color.theme.main)
                 .overlay(
                     Image(systemName: logo)
+                        .foregroundColor(Color.theme.second)
                         .font(.title)
                 )
                 

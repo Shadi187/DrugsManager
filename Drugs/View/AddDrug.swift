@@ -6,13 +6,21 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct AddDrug: View {
-    @StateObject var vm = AddDrugVM()
+    @EnvironmentObject var vm: MainViewModel
+//    @State var selectedItems: [PhotosPickerItem] = []
+    
     var body: some View {
         ZStack {
             Color.theme.main.ignoresSafeArea()
             VStack{
+//                if let data = vm.selectedItemData, let uiImage = UIImage(data:data) {
+//                    Image(uiImage: uiImage)
+//                        .resizable()
+//                }
+                addPhoto
                 addGenName
                 addTradeName
                 addDose
@@ -27,11 +35,13 @@ struct AddDrug: View {
     }
 }
 
-struct AddDrug_Previews: PreviewProvider {
-    static var previews: some View {
-        AddDrug()
-    }
-}
+//struct AddDrug_Previews: PreviewProvider {
+//    @StateObject var vm = MainViewModel()
+//    static var previews: some View {
+//        AddDrug()
+//            .environmentObject(vm)
+//    }
+//}
 
 extension AddDrug{
     var addGenName: some View {
@@ -112,11 +122,44 @@ extension AddDrug{
 //            .onChange(of: vm.newDescription){_ in
 //                vm.checkIsCompleted()
 //            }
-            
-            
-        
+    }
+    
+    var addPhoto: some View {
+        VStack{
+            PhotosPicker(selection:$vm.selectedItems ,maxSelectionCount: 1){
+                Circle()
+                    .frame(width:60,height:70)
+            }
+            .onChange(of:vm.selectedItems){newItem in
+                    
+                guard let item = vm.selectedItems.first else {
+                    return
+                }
+                item.loadTransferable(type: Data.self){ result in
+                    switch result{
+                    case .success(let data):
+                        if let data = data {
+                            DispatchQueue.main.async {
+                                self.vm.selectedItemData = data
+                            }
+                            
+                                
+                        } else {
+                            print("DATA IS NIL!")
+                        }
+                    case .failure(let failure):
+                       fatalError("\(failure)")
+                    }
+                }
+                
+//                vm.
+            }
+        }
     }
     
     
+//    func changeIt(){
+//        var image:Image = vm.selectedItem
+//    }
 
 }
